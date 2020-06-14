@@ -55,8 +55,8 @@ func main() {
 	}
 
 	listen := opts.Listen
-	if listen == ":8080" {
-		listen = "0.0.0.0:8080"
+	if listen == ":3003" {
+		listen = "0.0.0.0:3003"
 	}
 	log.Printf("Listening on http://%s", listen)
 	if err := server.ListenAndServe(opts.Listen); err != nil {
